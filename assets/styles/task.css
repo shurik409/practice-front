@@ -16,7 +16,7 @@
 
   
   #menu_col { 
-    width: 200px; 
+    width: 220px; 
     height: 1300px;
     padding: 5px;
    }
@@ -63,9 +63,9 @@
     transition: padding-left 200ms ease-in-out;
   }
   
-  .menu__item a:hover {
+  .menu__item:hover a{
     transform: translate(30px);
-    padding-left: 20px;
+    padding-left: 30px;
     color: #1e824c;
   }
   
@@ -73,8 +73,17 @@
     border-bottom: 1px solid #aaa;
   }
   
- 
-  
+  .menu__item{
+    background-size: 40px auto;
+    background-position: -40px center;
+    background-repeat: no-repeat;
+    transition: .3s;
+    background-image: url("../img/Task.png");
+  }
+  .menu__item:hover {
+    background-position: 8px center;
+    padding-left: 28px;
+  }
   
   p, input, textarea, [type="submit"], button {
     font-size: 1.6rem;
@@ -349,4 +358,14 @@
         margin: 10px 5px 20px 0px;
         padding: 5px; 
        }
-  
+       .time{
+        background-image: url("../img/WT.png");
+      }
+      
+      .reports{
+        background-image: url("../img/Repotr.png");
+      }
+      
+      .tasks{
+        background-image: url("../img/Task.png");
+      }
