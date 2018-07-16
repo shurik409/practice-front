@@ -1,172 +1,13 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-    a.logo{
-    display: block;
-    margin-bottom: 40px;
-}
-    img{
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-}
-
-  
-  #menu_col { 
-    width: 220px; 
-    height: 1300px;
-    padding: 5px;
-   }
+@import url(left-menu.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(main.css);
 
 
-  
-
-  ul {
-    list-style: none;
-  }
-  
-  li {
-    font-size: 1.6rem;
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  a:visited {
-    color: inherit;
-  }
-  
-  .menu {
-    padding: 20px;
-    max-width: 250px;
-    width: 100%;
-    background: #393939;
-	  top: 0;
-	  left: 0;
-  }
-  
-  .menu__item {
-    padding: 5px 10px 5px 10px;
-    font-size: 1.8rem;
-    max-width: 250px;
-    cursor: pointer;
-    color: #999999;
-  }
-  
-  .menu__item a {
-    transition: padding-left 200ms ease-in-out;
-  }
-  
-  .menu__item:hover a{
-    transform: translate(30px);
-    padding-left: 30px;
-    color: #1e824c;
-  }
-  
-  .menu__item:not(:last-child) {
-    border-bottom: 1px solid #aaa;
-  }
-  
-  .menu__item{
-    background-size: 40px auto;
-    background-position: -40px center;
-    background-repeat: no-repeat;
-    transition: .3s;
-    background-image: url("../img/Task.png");
-  }
-  .menu__item:hover {
-    background-position: 8px center;
-    padding-left: 28px;
-  }
-  
-  p, input, textarea, [type="submit"], button {
-    font-size: 1.6rem;
-    font-family: 'Open Sans', sans-serif;
-  }
-
-  h1, h2, p {
-    display: block;
-    font-family: 'Open Sans';
-  }
-
-  h2 {
-    display: inline-block;
-    padding: 5px 20px;
-    font-size: 3.6rem;
-    color: #fff;
-    background: #36b871;
-  }
-  
-  button, [type="submit"] {
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
-  
-  .report {
-    margin-top:50px;
-  }
-  
-
-  .top_menu {
-    position: absolute;
-    min-height: 60px;
-    min-width: 600px;
-    width: 100%;
-    background: #36b871;
-    margin: 0;
-    top:0;
-    z-index: -150;
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    padding: 10px 0;
-  }
-  
-  .container {
-    max-width: 1240px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .header__user {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    overflow: hidden;
-    cursor: pointer;
-    margin-right: 50px;
-  }
-  
-  .header__user img {
-    width: 100%;
-  }
-
-  .header a{
-    color: white;
-  }
-
-  .name{
-    margin-left: 225px;
-  }
   .main{
     display: flex;
   }
 
-    .content{
-        margin-left:20px;
-        margin-top: 80px;
-        width: 100%;
-    }
 
     p, input, textarea, [type="submit"], button {
         font-size: 1.6rem;
@@ -191,7 +32,7 @@
         cursor: pointer;
       }
       
-      .report {
+      .task {
         margin-top:50px;
       }
       
@@ -200,12 +41,12 @@
         width: 100%;
       }
       
-      .old_reports {
+      .old_tasks {
         padding-top: 30px;
         position: relative;
       }
       
-      .old_reports::before {
+      .old_tasks::before {
         content: "";
         position: absolute;
         top: 0;
@@ -229,7 +70,7 @@
         margin-bottom: 15px;
       }
       
-      .raw__report {
+      .raw__task {
         display: flex;
         justify-content: flex-start;
         position: relative;
@@ -237,7 +78,7 @@
         font-size: 1.6rem;
       }
       
-      .raw__report::after {
+      .raw__task::after {
         content: "";
         position: absolute;
         left: 50%;
@@ -247,8 +88,8 @@
         height: 80%;
       }
       
-      .raw__report-text,
-      .raw__report-note {
+      .raw__task-text,
+      .raw__task-note {
         position: relative;
         max-width: 50%;
         width: 100%;
@@ -260,21 +101,21 @@
           font-size: 2.4rem;
         }
       
-        .raw__report {
+        .raw__task {
             flex-wrap: wrap;
           }
           
-          .raw__report::after {
+          .raw__task::after {
              border: none;
           }
           
-          .raw__report-text,
-          .raw__report-note {
+          .raw__task-text,
+          .raw__task-note {
             max-width: 100%;
             margin: 0;
           }
           
-          .raw__report-text::after {
+          .raw__task-text::after {
             content: "";
             display: block;
             width: 90%;
@@ -284,17 +125,17 @@
           
         }
       
-      .report__date {
+      .task__date {
         margin-bottom: 15px;
         margin-left: 40px;
       }
       
-      .report__date p {
+      .task__date p {
         font-size: 2.4rem;
         font-weight: bold;
       }
       
-      .report__inputs {
+      .task__inputs {
         display: flex;
         flex-wrap: wrap;
         margin-left: 20px;
@@ -319,7 +160,7 @@
       
       
       
-      .more_text{
+      .border{
         margin-top: 5px;
         margin-bottom: 5px;
         margin-left: 15px;
@@ -332,7 +173,7 @@
         outline: none;
       }
       
-      [name*="report_"] {
+      [name*="task"] {
         display: inline-block;
         max-width: 45%;
         width: 100%;
@@ -349,7 +190,7 @@
         
       }
       
-      .report__accept {
+      .task__accept {
         display: block;
         margin-left: auto;
       }
@@ -358,14 +199,6 @@
         margin: 10px 5px 20px 0px;
         padding: 5px; 
        }
-       .time{
-        background-image: url("../img/WT.png");
-      }
-      
-      .reports{
-        background-image: url("../img/Repotr.png");
-      }
-      
-      .tasks{
-        background-image: url("../img/Task.png");
-      }
+  
+
+       
