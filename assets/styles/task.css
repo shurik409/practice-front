@@ -4,9 +4,7 @@
 @import url(main.css);
 
 
-  .main{
-    display: flex;
-  }
+  
 
 
     p, input, textarea, [type="submit"], button {
@@ -74,7 +72,6 @@
         display: flex;
         justify-content: flex-start;
         position: relative;
-        margin-left: 65px;
         font-size: 1.6rem;
       }
       
@@ -127,7 +124,6 @@
       
       .task__date {
         margin-bottom: 15px;
-        margin-left: 40px;
       }
       
       .task__date p {
@@ -201,4 +197,6 @@
        }
   
 
-       
+       .raw__task h1{
+        margin-bottom:12px;
+      }

@@ -3,22 +3,6 @@
 @import url(main.css);
 @import url(footer.css);
 
-  .main{
-    display: flex;
-  }
-
-    
-
-    p, input, textarea, [type="submit"], button {
-        font-size: 1.6rem;
-        font-family: 'Open Sans', sans-serif;
-      }
-      
-      h1, h2, p {
-        display: block;
-        font-family: 'Open Sans';
-      }
-      
       h2 {
         display: inline-block;
         padding: 5px 20px;
@@ -74,7 +58,6 @@
         display: flex;
         justify-content: flex-start;
         position: relative;
-        margin-left: 65px;
         font-size: 1.6rem;
       }
       
@@ -127,7 +110,6 @@
       
       .report__date {
         margin-bottom: 15px;
-        margin-left: 40px;
       }
       
       .report__date p {
@@ -199,6 +181,8 @@
         margin: 10px 5px 20px 0px;
         padding: 5px; 
        }
-  
+  .raw__report h1{
+    margin-bottom:12px;
+  }
 
        

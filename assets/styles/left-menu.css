@@ -1,18 +1,10 @@
-@import url(left-menu.css);
-@import url(header.css);
 
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
 
     a.logo{
     display: block;
     margin-bottom: 40px;
 }
-    img{
+   .left img{
     width: 100%;
     display: block;
     margin: 0 auto;
@@ -20,9 +12,9 @@
 
   
   #menu_col { 
-    width: 220px;
+    width: 240px;
     height: 100vh;
-    min-height: 600px;
+    min-height: 400px;
     padding: 5px;
    }
 
@@ -96,20 +88,20 @@
         margin: 10px 5px 20px 0px;
         padding: 5px; 
     }
-    .time{
+    left .time{
         background-image: url("../img/WT.png");
     }
     
-    .reports{
+    left .reports{
         background-image: url("../img/Repotr.png");
     }
     
-    .tasks{
+    left .tasks{
         background-image: url("../img/Task.png");
     }
 
     .menu_footer{
-      margin-top: 40px;
+      display: flex;
       position: absolute;
       bottom: 0;
       width: 100%;
@@ -118,7 +110,22 @@
       box-sizing: border-box;
     }
     .user_image img{
-      width:100px;
-      height: 100px;
+      width:70px;
+      height: 70px;
       margin: 0;
+    }
+    .logo{
+      margin:10px 5px 5px 5px;
+    }
+    .menu_footer a{
+      flex:left;
+    }
+    .menu_footer h1{
+      padding-top:10px; 
+      margin-left:10px;  
+      text-align: left;
+      color:#999;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 25px;
+      font-weight: normal;
     }
