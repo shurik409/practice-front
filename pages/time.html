@@ -10,6 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../assets/styles/time.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -34,21 +35,25 @@
         
         </div>
         <div class="main">
+            <input type="checkbox" id="menu">
+            <label for="menu" onclick><img class="menu_button" src="../assets/img/menu.png"></label>
             <div class="left">
-                <aside class="menu" id="menu_col">
+                <aside class="menu off-canvas" id="menu_col" >
+                        <img class="close_button" src="../assets/img/close.png">
                     <a href="#" class="logo"><img src="../assets/img/logo.png" ></a>
-                    <nav class="menu__nav">
-                    <ul class="menu__list ">
-                        <li class="menu__item time">
-                            <a href="">Work Time</a>
-                        </li>
-                        <li class="menu__item reports">
-                            <a href="">Reports</a>
-                        </li>
-                        <li class="menu__item tasks">
-                            <a href="">Tasks</a>
-                        </li>
-                    </ul>
+                    <nav class="menu__nav" >
+                        <ul class="menu__list ">
+                            <li class="menu__item time">
+                                <a href="">Work Time</a>
+                            </li>
+                            <li class="menu__item reports">
+                                <a href="">Reports</a>
+                            </li>
+                            <li class="menu__item tasks">
+                                <a href="">Tasks</a>
+                            </li>
+                        </ul>
+                        
                     </nav>
                     <div class=menu_footer>
                         <a href="#" class="user_image"><img  src="../assets/img/CUser.png"></a>
@@ -206,6 +211,37 @@
         <div class="footer"> 
                 <p>&copy; 2018 Work Record</p> 
         </div>
-        <script src="" async defer></script>
+        <script >
+            $( "#menu" ).on( "click", function() {
+                    if($("#menu").prop("checked") ){
+                        $(".off-canvas").css("left","0");
+                        $(".content").css("padding-left","267px");
+                    }
+                    else if(!$("#menu").prop("checked")){
+                        $(".off-canvas").css("left","-20em");
+                        $(".content").css("padding-left","0");
+                    }
+                    
+                });
+            $(window).resize(function() {
+                
+                if(!window.matchMedia('(max-width: 740px)').matches){
+                        $(".off-canvas").css("left","0");
+                        $(".content").css("padding-left","267px");
+                        //$("p").text($(window).width());
+                        $("#menu").prop("checked",false); 
+                }
+                else if(window.matchMedia('(max-width: 740px)').matches && !$("input").prop("checked")){
+                    $(".off-canvas").css("left","-20em");
+                    $(".content").css("padding-left","0");
+                    
+                }
+            });
+            $('body').on('click','.close_button',function(){
+                $("#menu").prop("checked",false);
+                $(".off-canvas").css("left","-20em");
+                $(".content").css("padding-left","0");
+            });
+        </script>
     </body>
 </html>

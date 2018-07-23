@@ -50,3 +50,10 @@
   .top_menu .name{
     margin-left: 225px;
   }
+
+  @media screen and (max-width:740px){
+    .top_menu{
+      height: 40px;
+      min-height: 40px;
+    }
+  }

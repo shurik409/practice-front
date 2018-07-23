@@ -75,18 +75,19 @@
         font-size: 1.6rem;
       }
       
-      .raw__task::after {
-        content: "";
+     
+      .raw__task-text::after,.raw__task-time::after,
+      .raw__task-user::after{content: "";
         position: absolute;
-        left: 50%;
+        left: 100%;
         top: 0;
         margin: 20px 0;
+        margin-left:20px; 
         border-left: 1px solid #aaa;
         height: 80%;
       }
-      
-      .raw__task-text,
-      .raw__task-note {
+      .raw__task-text,.raw__task-note,
+      .raw__task-user,.raw__task-time {
         position: relative;
         max-width: 50%;
         width: 100%;
@@ -136,6 +137,7 @@
         flex-wrap: wrap;
         margin-left: 20px;
         margin-bottom: 30px;
+        justify-content: center;
       }
       
       [type="text"] {
@@ -171,7 +173,7 @@
       
       [name*="task"] {
         display: inline-block;
-        max-width: 45%;
+        max-width: 28%;
         width: 100%;
         
       }

@@ -9,10 +9,6 @@ html, body {
     box-sizing: border-box;
   }
 
-    a.logo{
-    display: block;
-    margin-bottom: 40px;
-}
 
     p, input, textarea, [type="submit"], button {
     font-size: 1.6rem;
@@ -58,4 +54,14 @@ html, body {
 .main, .header, .footer {
     box-sizing: border-box;
     width: 100%;
+}
+
+@media screen and (max-width:740px){
+
+    .back{
+        background: url(../img/background_mobile.jpg);
+    }
+    .content{
+        padding-left: 0;
+    }
 }
