@@ -11,6 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../assets/styles/registration.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="../js/leftmenu.js" ></script>
+        <script src="../js/reg.js" ></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -106,82 +108,6 @@
                 <p>&copy; 2018 Work Record</p> 
         </div>
         <script >
-            $( "#menu" ).on( "click", function() {
-                    if($("#menu").prop("checked") ){
-                        $(".off-canvas").css("left","0");
-                        $(".content").css("padding-left","267px");
-                        $(".registration input").css("float","none");
-                        $("[type='save']").css({
-                            'float': "none",
-                            'margin-left': "0"
-                        });
-                        $("[type='cancel']").css({
-                            "float": "none",
-                            "margin-right": "0"
-                        });
-                    }
-                    else if(!$("#menu").prop("checked")){
-                        $(".off-canvas").css("left","-20em");
-                        $(".content").css("padding-left","0");
-                        $(".registration input").css("float","right");
-                        $("[type='save']").css({
-                            'float': "left",
-                            'margin-left': "15px"
-                        });
-                        $("[type='cancel']").css({
-                            "float": "right",
-                            "margin-right": "15px"
-                        });
-                    }
-                    
-                });
-            $(window).resize(function() {
-                
-                if(!window.matchMedia('(max-width: 740px)').matches){
-                        $(".off-canvas").css("left","0");
-                        $(".content").css("padding-left","267px");
-                        //$("p").text($(window).width());
-                        $("#menu").prop("checked",false); 
-                        $(".registration input").css("float","right");
-                        $("[type='save']").css({
-                            'float': "left",
-                            'margin-left': "15px"
-                        });
-                        $("[type='cancel']").css({
-                            "float": "right",
-                            "margin-right": "15px"
-                        });
-                }
-                else if(window.matchMedia('(max-width: 740px)').matches && !$("input").prop("checked")){
-                    $(".off-canvas").css("left","-20em");
-                    $(".content").css("padding-left","0");
-                        $(".registration input").css("float","right");
-                        
-                        $("[type='save']").css({
-                            'float': "left",
-                            'margin-left': "15px"
-                        });
-                        $("[type='cancel']").css({
-                            "float": "right",
-                            "margin-right": "15px"
-                        });
-                    
-                }
-            });
-            $('body').on('click','.close_button',function(){
-                $("#menu").prop("checked",false);
-                $(".off-canvas").css("left","-20em");
-                $(".content").css("padding-left","0");
-                 $(".registration input").css("float","right");
-                 $("[type='save']").css({
-                    'float': "left",
-                    'margin-left': "15px"
-                });
-                $("[type='cancel']").css({
-                    "float": "right",
-                    "margin-right": "15px"
-                });
-            });
         </script>
     </body>
 </html>

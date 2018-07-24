@@ -1,0 +1,46 @@
+$(function(){
+    $('[type="users"]').click(function(){
+        if($('.names').css('visibility') == 'hidden'){
+         $('.names').css({
+             'visibility':'visible',
+             'opacity':'1'
+         });
+         $('[type="users"]').css({
+             'background':'#36b871',
+             'color':'white'
+         });
+         $('[type="users"]').hover(function(){
+             $('[type="users"]').css({
+                 'background':'white',
+                 'color':'black'
+             });
+         },function(){
+             $('[type="users"]').css({
+                 'background':'#36b871',
+                 'color':'white'
+             });
+         });
+        }
+        else{
+         $('.names').css({
+             'visibility':'hidden',
+             'opacity':'0'
+         });
+         $('[type="users"]').css({
+             'background':'white',
+             'color':'black'
+         });
+         $('[type="users"]').hover(function(){
+             $('[type="users"]').css({
+                 'background':'#36b871',
+                 'color':'white'
+             });
+         },function(){
+             $('[type="users"]').css({
+                 'background':'white',
+                 'color':'black'
+             });
+         });
+        }
+    });
+});

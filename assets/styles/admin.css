@@ -26,11 +26,14 @@
 }
 
 .names{
+    visibility: hidden;
+    opacity: 0;
     height: 50vh;
     overflow: auto;
     position: relative;
     float: left;
     margin-left:150px; 
+    transition: visibility 0.5s, opacity 0.5s linear;
 }
 
 .names p{
@@ -99,4 +102,15 @@
 .content{
     text-align: center;
     padding-left: 30vw;
+}
+
+.users [type="users"]{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #36b871;
+}
+
+.users [type="users"]:hover{
+    background-color: #36b871;
+    color: white;
 }
