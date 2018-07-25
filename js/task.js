@@ -9,7 +9,10 @@ $(function(){
     });
     $('.list_val').click(function(){
         var LinkText = $(this).text();
-        $('.type-search').attr('value',LinkText);
+        var nowText = $('.type-search').val().split(',');
+        nowText.splice(nowText.length-1,1,' ');
+        var text = nowText.join(',');
+        $('.type-search').attr('value',text  + LinkText + ",");
         $('#list').slideUp();
 
         return false;

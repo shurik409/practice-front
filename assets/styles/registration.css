@@ -113,6 +113,93 @@ input:focus {
     outline: none;
 }
 
+#list{
+    display: none;
+    position: absolute;
+    width:100%;
+    border:none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    background: white;
+  }
+
+  #list li{
+    border-bottom: solid 1px #36b871;
+  }
+  #list li:hover{
+    background: #36b871;
+    color:white;
+  }
+
+  .type_list{
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+  }
+  .type_list input{
+    float: none;
+    margin-left:0;
+  }
+  
+  .registration select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #36b871;
+    background-image: none;
+  }
+  .registration .select {
+    position: relative;
+    display: block;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #36b871;
+    overflow: hidden;
+    border-radius: .25em;
+    margin: 0 auto;
+  }
+  .registration select {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    color: #fff;
+    cursor: pointer;
+  }
+  .registration select::-ms-expand {
+    display: none;
+  }
+
+  .registration .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em;
+    background: #36b871;
+    pointer-events: none;
+  }
+  .registration .select:hover::after {
+    color: white;
+  }
+  .registration .select::after {
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+  }
+
+    .registration option{
+        border-bottom: solid 1px #36b871;
+    }
+
 @media screen and (max-width:740px){
 
     .person{
@@ -135,3 +222,4 @@ input:focus {
         width: 100%; 
     }
 }
+
