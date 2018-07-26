@@ -15,7 +15,7 @@
 
 
 .avatar{
-    height: 20vw;
+    width: 20vw;
 }
 
 
@@ -115,4 +115,74 @@
 
 .log_out{
     margin-left: 70px;
+}
+
+
+@media screen and (max-width:740px){
+    .right_contains{
+        display: block;
+    }
+
+    .right_part .name{
+        display: flex;
+        text-align: center;
+    }
+
+    .right_part{
+        width:90%;
+        margin-top: 20px;
+        margin-right: 5vw;
+    }
+
+    .right_part .name h1{
+        font-size: 5vw;
+        margin: auto;
+
+    }
+    .person{
+        float:none;
+        margin-right: 20vw;
+        margin-left: 20vw;
+        margin-top: 0;
+    }
+    .avatar{
+        width: 100%;
+        max-width: 300px;
+    }
+    .log_out{
+        text-align: center;
+        margin-left: 0;
+    }
+    .log_out button{
+        padding: 8px 16px;
+    }
+    .admin_view .text p{
+        font-size: 5vw;
+    }
+
+    .admin_buttons li{
+        padding: 8px 16px;
+        font-size: 16px;
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .list_buttons{
+      position: relative;
+      display: flex;
+    }
+    .admin_view .admin_buttons {
+        margin-right: 0;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .admin_view .text{
+        float: none;
+      margin-top: 3.5vh;
+      margin-left: 8vw;
+      position: absolute;
+    }
+    .admin_view .buttons {
+        margin-left: 0;
+    }
 }

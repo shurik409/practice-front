@@ -94,34 +94,7 @@
         margin: 0 20px;
       }
       
-      @media only screen and (max-width: 768px) {
-        h2 {
-          font-size: 2.4rem;
-        }
       
-        .raw__task {
-            flex-wrap: wrap;
-          }
-          
-          .raw__task::after {
-             border: none;
-          }
-          
-          .raw__task-text,
-          .raw__task-note {
-            max-width: 100%;
-            margin: 0;
-          }
-          
-          .raw__task-text::after {
-            content: "";
-            display: block;
-            width: 90%;
-            margin: 15px auto;
-            border-top: 1px solid #aaa;
-          }
-          
-        }
       
       .task__date {
         margin-bottom: 15px;
@@ -236,4 +209,98 @@
 
       
       
-      
+      @media screen and (max-width:740px){
+        h2 {
+          font-size: 2.4rem;
+        }
+        .task__inputs {
+          display: block;
+        }
+        [name*="task_"] {
+          max-width: none;
+        }
+    
+        #content_col { 
+          margin: 0;
+         }
+    
+         .task__accept {
+          margin-left: 0;
+          margin: 0 auto;
+          margin-top: 20px;
+          
+         }
+    
+         .container{
+           margin-bottom: 20px;
+         }
+         .task__inputs {
+          margin: 0 20px;
+         }
+    
+         .old_tasks::before {
+          width: 10px;
+         }
+         .raw__task h1 {
+          font-size: 1.5em;
+        }
+        p{
+          font-size: 1.2rem;
+        }
+        .raw__date {
+          font-size: 1.8rem;
+          margin-left: -20px;
+        }
+        .task__date{
+          margin-left:20px;
+        }
+        .task__date p {
+          font-size: 1.8rem;
+        }
+        .users {
+          max-width: 100%;
+        }
+        .raw__task {
+          flex-wrap: wrap;
+        }
+        
+        .raw__task::after {
+           border: none;
+        }
+        
+        .raw__task-text,
+        .raw__task-note,
+        .raw__task-user,
+        .raw__task-time {
+          max-width: 100%;
+          margin: 0;
+        }
+        
+        .raw__task-text::after {
+          
+          position: unset;
+          content: "";
+          display: block;
+          width: 90%;
+          margin: 15px auto;
+          border-top: 1px solid #fff;
+        }
+        .raw__task-time::after {
+          
+          position: unset;
+          content: "";
+          display: block;
+          width: 90%;
+          margin: 15px auto;
+          border-top: 1px solid #fff;
+        }
+        .raw__task-user::after {
+          
+          position: unset;
+          content: "";
+          display: block;
+          width: 90%;
+          margin: 15px auto;
+          border-top: 1px solid #fff;
+        }
+      }

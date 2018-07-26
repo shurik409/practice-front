@@ -8,7 +8,7 @@
     position: relative;
     width: 250px;
     text-align: center;
-    float:left;
+    margin: auto;
 }
 
 .person h1{
@@ -21,8 +21,8 @@
 
 .users{
     position: relative;
-    float:left;
-    margin-left: 200px;
+    display: flex;
+    width: 60%;
 }
 
 .names{
@@ -31,8 +31,8 @@
     height: 50vh;
     overflow: auto;
     position: relative;
-    float: left;
-    margin-left:150px; 
+    margin: 0 auto;
+    min-width: 230px;
     transition: visibility 0.5s, opacity 0.5s linear;
 }
 
@@ -75,7 +75,7 @@
     transition-duration: 0.4s;
     cursor: pointer;
     margin-top : 20px; 
-    margin-right: 50px;
+    margin-left: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -101,16 +101,72 @@
 
 .content{
     text-align: center;
-    padding-left: 30vw;
 }
 
 .users [type="users"]{
     background-color: white; 
     color: black; 
     border: 2px solid #36b871;
+    height: 55px;
+    
 }
 
 .users [type="users"]:hover{
     background-color: #36b871;
     color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:740px){
+    .content{
+        padding-left:0;
+    }
+
+    .content button{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .person{
+        width: 100%;
+        float: none;
+    }
+    .users{
+        margin-left: 0;
+        display: block;
+        width: auto;
+    }
+
+    .names{
+        margin-left: 0;
+        float: right;
+        height: 30vh;
+    }
+
+    .names p{
+        min-width: 100px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+    .names p:hover{
+        background: rgba(255, 255, 255,1);
+    }
+    .buttons{
+        position: absolute;
+        display: flex;
+        bottom: 60px;
+        left: 0; 
+        text-align: center; 
+        margin: 0 auto;
+        justify-content: space-around;
+        width: 100%;
+        
+    }
+    .container{
+        display: block;
+    }
+    
 }

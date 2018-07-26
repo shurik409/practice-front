@@ -79,34 +79,7 @@
         margin: 0 20px;
       }
       
-      @media only screen and (max-width: 768px) {
-        h2 {
-          font-size: 2.4rem;
-        }
       
-        .raw__report {
-            flex-wrap: wrap;
-          }
-          
-          .raw__report::after {
-             border: none;
-          }
-          
-          .raw__report-text,
-          .raw__report-note {
-            max-width: 100%;
-            margin: 0;
-          }
-          
-          .raw__report-text::after {
-            content: "";
-            display: block;
-            width: 90%;
-            margin: 15px auto;
-            border-top: 1px solid #aaa;
-          }
-          
-        }
       
       .report__date {
         margin-bottom: 15px;
@@ -185,4 +158,74 @@
     margin-bottom:12px;
   }
 
-       
+  @media screen and (max-width:740px){
+    .report__inputs {
+      display: block;
+    }
+    [name*="report_"] {
+      max-width: none;
+    }
+
+    #content_col { 
+      margin: 0;
+     }
+
+     .report__accept {
+      margin-left: 0;
+      margin: 0 auto;
+      margin-top: 20px;
+      
+     }
+
+     .container{
+       margin-bottom: 20px;
+     }
+     .report__inputs {
+      margin: 0 20px;
+     }
+
+     .old_reports::before {
+      width: 10px;
+     }
+     .raw__report h1 {
+      font-size: 1.5em;
+    }
+    p{
+      font-size: 1.2rem;
+    }
+    .raw__date {
+      font-size: 1.8rem;
+      margin-left: -20px;
+    }
+    .report__date{
+      margin-left:20px;
+    }
+    .report__date p {
+      font-size: 1.8rem;
+    }
+    h2 {
+      font-size: 2.4rem;
+    }
+  
+    .raw__report {
+        flex-wrap: wrap;
+      }
+      
+      .raw__report::after {
+         border: none;
+      }
+      
+      .raw__report-text,
+      .raw__report-note {
+        max-width: 100%;
+        margin: 0;
+      }
+      
+      .raw__report-text::after {
+        content: "";
+        display: block;
+        width: 90%;
+        margin: 15px auto;
+        border-top: 1px solid #fff;
+      }
+  }

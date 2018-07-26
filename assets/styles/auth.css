@@ -143,3 +143,8 @@
     }
 
  
+@media screen and (max-width:740px){
+    .content .auth{
+        transform: translateY(50%);
+    }
+}

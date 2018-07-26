@@ -3,7 +3,7 @@ $(function(){
     $( "#menu" ).on( "click", function() {
         if($("#menu").prop("checked") ){
             $(".off-canvas").css("left","0");
-            $(".content").css("padding-left","267px");
+            //$(".content").css("padding-left","267px");
         }
         else if(!$("#menu").prop("checked")){
             $(".off-canvas").css("left","-20em");

@@ -220,6 +220,8 @@ input:focus {
     
     .reg_input{
         width: 100%; 
-    }
+    }.old_reports::before {
+      width: 10px;
+     }
 }
 

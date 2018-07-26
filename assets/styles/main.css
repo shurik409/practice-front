@@ -36,7 +36,8 @@ html, body {
 
 .back{
     content: "";
-    background: url(../img/background.jpg);
+    background: url(../img/background.jpg) no-repeat;
+    background-size: cover;
     opacity: 0.5;
     top: 0;
     left: 0;
@@ -60,8 +61,16 @@ html, body {
 @media screen and (max-width:740px){
 
     .back{
-        background: url(../img/background_mobile.jpg);
+        background: url(../img/background_mobile.jpg) no-repeat;
+        background-size: cover;
     }
+
+    .back-overlay{
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.70);
+    }
+
     .content{
         padding-left: 0;
     }
