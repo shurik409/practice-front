@@ -148,3 +148,9 @@
         transform: translateY(50%);
     }
 }
+
+@media screen and (max-height:600px) and (max-width:740px){
+    .content .auth{
+        transform: none;
+    }
+}

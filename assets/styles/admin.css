@@ -28,8 +28,7 @@
 .names{
     visibility: hidden;
     opacity: 0;
-    height: 50vh;
-    overflow: auto;
+    
     position: relative;
     margin: 0 auto;
     min-width: 230px;
@@ -121,6 +120,33 @@
     justify-content: space-around;
 }
 
+
+  .type-search,  select{
+    width: 100%;
+    margin: 10px auto;
+    display: block;
+  }
+  #list{
+    display: none;
+    position: absolute;
+    width:100%;
+    border:none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    background: white;
+    height: 30vh;
+    overflow: auto !important;
+  }
+
+  #list li{
+    border-bottom: solid 1px #36b871;
+  }
+  #list li:hover{
+    background: #36b871;
+    color:white;
+    cursor: pointer;
+  }
+
 @media screen and (max-width:740px){
     .content{
         padding-left:0;
@@ -143,7 +169,7 @@
 
     .names{
         margin-left: 0;
-        float: right;
+        margin: 0 10px;
         height: 30vh;
     }
 
@@ -155,9 +181,9 @@
         background: rgba(255, 255, 255,1);
     }
     .buttons{
-        position: absolute;
+        position: unset;
         display: flex;
-        bottom: 60px;
+        bottom: unset;
         left: 0; 
         text-align: center; 
         margin: 0 auto;
