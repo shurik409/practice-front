@@ -94,9 +94,14 @@
     border: 2px solid #36b871;
 }
 .content [type="del"]:hover{
-    background-color: #36b871;
+    background-color: #ED3D26;
     color: white;
 }
+
+.content [type="del"]:disabled:hover{
+    background-color: white; 
+    color: black;
+} 
 
 .content{
     text-align: center;
@@ -146,6 +151,8 @@
     color:white;
     cursor: pointer;
   }
+
+  
 
 @media screen and (max-width:740px){
     .content{
