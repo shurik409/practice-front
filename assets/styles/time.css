@@ -39,7 +39,6 @@
         background-color: #4CAF50; /* Green */
         border: none;
         color: white;
-        padding: 16px 32px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -70,9 +69,11 @@
       .now__date p {
         font-size: 2.4rem;
         font-weight: bold;
+        padding-left: 30px;
       }
      
       
+
     
 
 
@@ -217,4 +218,72 @@
 
     .raw{
       transition: background-color 0.3s ease-out;
+    }
+
+    
+    .now__date button{
+      height: 50px;
+      width: 150px;
+      font-size: 2.0em;
+    }
+
+    @media screen and (max-width:768px){
+      .now__date{
+        text-align: center;
+      }
+      .now__date p {
+        padding-left: 0;
+      }
+    
+      .buttons_part{
+        display: flex;
+        justify-content: space-around;
+      }
+      .time_buttons{
+        display: block;
+      }
+      .time_buttons button {
+        height: 50px;
+        width: 130px;
+        font-size: 1.0em;
+        margin-left: 0;
+      }
+
+      .time_part{
+        display: flex;
+        justify-content: space-around;
+      }
+      .raw__time {
+        display: block;
+      }
+      .raw__list {
+        text-align: center;
+        margin-left: 0;
+      }
+      h2 {
+      font-size: 2.0em;
+      }
+      .raw__time-text {
+        font-size: 1.0em;
+      }
+      .times {
+        width: 45%;
+      }
+      .times p{
+        font-size: 1.3rem;
+        padding: 10px 0;
+      }
+      .timetable::before{
+        width: 10px;
+      }
+      .raw__date {
+        font-size: 1.8rem;
+      }
+      .now__date button {
+        font-size: 1.5em;
+      }
+      .task__accept {
+        margin: 0 auto;
+        margin-top: 40px;
+      }
     }

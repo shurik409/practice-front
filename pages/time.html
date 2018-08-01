@@ -66,24 +66,18 @@
             <div class="content">
                 <div id="content_col">
                     <div class="now__date">
-                        <p>26.06</p>      
+                        <p>26.06</p>   
+                        <button>Create</button>   
+
                     </div>
                     <div class="time_buttons">
-                        <div class="input">
-                            <h1>Has come</h1>
-                            <input type="text" placeholder="Has come...">
+                        <div class="buttons_part">
+                            <button>Has come</button>
+                            <button>Early lunch</button>
                         </div>
-                        <div class="input">
-                            <h1>Early lunch</h1>
-                            <input type="text" placeholder="Early lunch...">
-                        </div>
-                        <div class="input">
-                            <h1>End of lunch</h1>
-                            <input type="text" placeholder="End of lunch...">
-                        </div>
-                        <div class="input">
-                            <h1>Gone</h1>
-                            <input type="text" placeholder="Gone...">
+                        <div class="buttons_part">
+                            <button>End of lunch</button>
+                            <button>Gone</button>
                         </div>
                     </div>
                     <input class="task__accept" type="submit" value="Update">
@@ -93,38 +87,10 @@
                 <div class="timetable">
                     
                     <div class="raw__list">
-                            <div class="raw">
-                                    <p class="raw__date">25.06</p>
-                                    <div class="raw__time">
-                                        <div class="raw_coming times">
-                                            <div class="time_header">
-                                                <p>Has come</p>
-                                            </div>
-                                            <p class="raw__time-text" >01:52</p>
-                                        </div>
-                                        <div class="raw_dinner_in times">
-                                            <div class="time_header">
-                                                <p>Early lunch</p>
-                                            </div>
-                                            <p class="raw__time-text">01:52</p>
-                                        </div>
-                                        <div class="raw_dinner_out times" >
-                                            <div class="time_header">
-                                                <p>End of lunch</p>
-                                            </div>
-                                            <p class="raw__time-text">01:52</p>
-                                        </div>
-                                        <div class="raw_out times">
-                                            <div class="time_header">
-                                                <p>Gone</p>
-                                            </div>
-                                            <p class="raw__time-text">01:52</p>
-                                        </div>
-                                    </div>
-                                </div>
                         <div class="raw">
-                                <p class="raw__date">24.06</p>
-                                <div class="raw__time">
+                            <p class="raw__date">25.06</p>
+                            <div class="raw__time">
+                                <div class="time_part">
                                     <div class="raw_coming times">
                                         <div class="time_header">
                                             <p>Has come</p>
@@ -137,9 +103,12 @@
                                         </div>
                                         <p class="raw__time-text">01:52</p>
                                     </div>
+                                </div>
+                                
+                                <div class="time_part">
                                     <div class="raw_dinner_out times" >
                                         <div class="time_header">
-                                            <p >End of lunch</p>
+                                            <p>End of lunch</p>
                                         </div>
                                         <p class="raw__time-text">01:52</p>
                                     </div>
@@ -151,9 +120,11 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         <div class="raw">
-                                <p class="raw__date">23.06</p>
-                                <div class="raw__time">
+                            <p class="raw__date">24.06</p>
+                            <div class="raw__time">
+                                <div class="time_part">
                                     <div class="raw_coming times">
                                         <div class="time_header">
                                             <p>Has come</p>
@@ -166,9 +137,12 @@
                                         </div>
                                         <p class="raw__time-text">01:52</p>
                                     </div>
+                                </div>
+                                
+                                <div class="time_part">
                                     <div class="raw_dinner_out times" >
                                         <div class="time_header">
-                                            <p >End of lunch</p>
+                                            <p>End of lunch</p>
                                         </div>
                                         <p class="raw__time-text">01:52</p>
                                     </div>
@@ -180,32 +154,72 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="raw">
+                            <p class="raw__date">23.06</p>
+                            <div class="raw__time">
+                                <div class="time_part">
+                                    <div class="raw_coming times">
+                                        <div class="time_header">
+                                            <p>Has come</p>
+                                        </div>
+                                        <p class="raw__time-text" >01:52</p>
+                                    </div>
+                                    <div class="raw_dinner_in times">
+                                        <div class="time_header">
+                                            <p>Early lunch</p>
+                                        </div>
+                                        <p class="raw__time-text">01:52</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="time_part">
+                                    <div class="raw_dinner_out times" >
+                                        <div class="time_header">
+                                            <p>End of lunch</p>
+                                        </div>
+                                        <p class="raw__time-text">01:52</p>
+                                    </div>
+                                    <div class="raw_out times">
+                                        <div class="time_header">
+                                            <p>Gone</p>
+                                        </div>
+                                        <p class="raw__time-text">01:52</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="raw">
                             <p class="raw__date">22.06</p>
                             <div class="raw__time">
-                                <div class="raw_coming times">
-                                    <div class="time_header">
-                                        <p>Has come</p>
+                                <div class="time_part">
+                                    <div class="raw_coming times">
+                                        <div class="time_header">
+                                            <p>Has come</p>
+                                        </div>
+                                        <p class="raw__time-text" >01:52</p>
                                     </div>
-                                    <p class="raw__time-text" >01:52</p>
+                                    <div class="raw_dinner_in times">
+                                        <div class="time_header">
+                                            <p>Early lunch</p>
+                                        </div>
+                                        <p class="raw__time-text">01:52</p>
+                                    </div>
                                 </div>
-                                <div class="raw_dinner_in times">
-                                    <div class="time_header">
-                                        <p>Early lunch</p>
+                                
+                                <div class="time_part">
+                                    <div class="raw_dinner_out times" >
+                                        <div class="time_header">
+                                            <p>End of lunch</p>
+                                        </div>
+                                        <p class="raw__time-text">01:52</p>
                                     </div>
-                                    <p class="raw__time-text">01:52</p>
-                                </div>
-                                <div class="raw_dinner_out times" >
-                                    <div class="time_header">
-                                        <p >End of lunch</p>
+                                    <div class="raw_out times">
+                                        <div class="time_header">
+                                            <p>Gone</p>
+                                        </div>
+                                        <p class="raw__time-text">01:52</p>
                                     </div>
-                                    <p class="raw__time-text">01:52</p>
-                                </div>
-                                <div class="raw_out times">
-                                    <div class="time_header">
-                                        <p>Gone</p>
-                                    </div>
-                                    <p class="raw__time-text">01:52</p>
                                 </div>
                             </div>
                         </div>

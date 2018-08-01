@@ -49,7 +49,7 @@
     margin-left: 225px;
   }
 
-  @media screen and (max-width:740px){
+  @media screen and (max-width:768px){
     .top_menu{
       height: 40px;
       min-height: 40px;

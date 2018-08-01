@@ -200,7 +200,7 @@ input:focus {
         border-bottom: solid 1px #36b871;
     }
 
-@media screen and (max-width:740px){
+@media screen and (max-width:768px){
 
     .person{
         float: none;

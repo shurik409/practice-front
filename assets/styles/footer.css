@@ -19,7 +19,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-@media screen and (max-width:740px){
+@media screen and (max-width:768px){
   .footer{
     height: 40px;
     padding: 0;
